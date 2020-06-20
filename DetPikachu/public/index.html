@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Detective Pikachu Card Set</title>
+
+  <style>
+    .block {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #ADD8E6;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+    <img src="pika.jpg" alt="Pikachu" style="width:800px;height:500px;">
+    <body style="background-color:lightgreen;"></body>
+    <h1>Detective Pikachu Card Set</h1>
+    <p id="backup">Create Backup Data.</p>
+    <button type="button" id="myButton1" class="block">Create Backup!</button>
+    <p id="purge">Purge Backup Data.</p>
+    <button type ="button" id="myButton2" class="block">Purge Backup!</button>
+    <p id="search">Search Data.</p>
+    <form action=”/clicked2” method=”post”>
+  <label for="name">Name:</label><br>
+  <input type="text" id="cname" name="cname"><br>
+  <label for="hp">Hit Point:</label><br>
+  <input type="text" id="hp" name="hp"><br>
+  <label for="rarity">Rarity:</label><br>
+  <input type="text" id="rarity" name="rarity"><br>
+</form>
+    <button type="button" id="myButton3" class="block">Search Backup!</button>
+  </body>
+  <script src="client.js"></script>
+</html>
