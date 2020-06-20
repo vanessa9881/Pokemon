@@ -45,7 +45,7 @@ app.post('/clicked', (req, res) => {
 
   console.log("passed");
 
-  var sql = "INSERT INTO cards (id,name,npn,hp,rarity,setname,setCode) VALUES ? "
+  var sql = "INSERT INTO cards2 (id,name,npn,hp,rarity,setname,setCode) VALUES ? "
 
   pokemon.card.all({setCode: 'det1'})
 .on('data',function(card) {
@@ -69,7 +69,7 @@ app.post('/clicked', (req, res) => {
 
 });
 
-var sql = "INSERT INTO cards (id,name,npn,hp,rarity,setname,setCode) VALUES ? "
+var sql = "INSERT INTO cards2 (id,name,npn,hp,rarity,setname,setCode) VALUES ? "
 
 
 console.log("passed");
